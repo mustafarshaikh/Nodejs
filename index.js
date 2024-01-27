@@ -1,1 +1,1 @@
-alert("mushy");
+console.log("mushy");

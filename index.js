@@ -1,47 +1,118 @@
-console.log("mushy");
-console.log("mushy1");
-console.log("mushy123");
-// Variables 
-var v1 = 14 //int
-var2 = "mushy" //string
-x = null //no value
-y = undefined // not sure what value
-bool = true //true | false
-// " = " assignment operator
-// var convention:
-// case sensitive: A & a || only _ $(can be first but no int) is allowed || no reserve words can be used
-// Cases on how to write a variable
-camleCase = "write first as small then follow with capital"
-console.log(v1 + 1 + ' name: '+  var2 + ' ' + bool );
-console.log('camelcase sample: ' + camleCase);
+//single line comments
+/* Multiline comments  */
+//Operator
+let a = 5;
+let b = 2;
+//arethmetic operator
+console.log(" a & b: ", a , b );
+console.log("a + b = ", a+b);
+console.log("a - b = ", a-b);
+console.log("a + b = ", a*b);
+console.log("a + b = ", a/b);
+console.log("a + b = ", a**b);
+console.log("a + b = ", a%b);
+//Uninary operator
+console.log("post increment a = ", a++);
+console.log("post increment next line = ", a);
+console.log("pre increment b =", ++b);
+a = 5;
+b = 2;
+console.log(" a & b: ", a , b );
+console.log("post decrement  a = ", a--);
+console.log("post decrement  next line = ", a);
+console.log("pre decrement b =", --b);
+//assignment operator
+a = 5;
+b = 2;
+console.log(" a & b: ", a , b );
+console.log(" a += 5 ", a += 5 );
+console.log(" a -= 5 ", a -= 5 );
+console.log(" a **= 5 ", a **= 5 );
+console.log(" a %= 5 ", a %= 5 );
+a = 5 ;
+console.log(" a /= 5 ", a /= 5 );
+//Comparison
+a = 5;
+b = '5';
+/*
 
-let newname = "what";
-newname = " is ";
-newname = " my name "; 
-// let declare once and update multiple
-const finalname ="mushy";
-// finalname = "wow";
-console.log(newname);
-console.log(finalname);
-//default value is always undefined (let & var)
-// const must have a value
-//Blocks;
-{
-    let a = 1
-    console.log(a);
+*/
+console.log(a == b); // == value
+console.log(a === b); // === value + type
+console.log(a <= b); // <= greater or equal
+console.log(a >= b); // >= lesser or equal 
+console.log(a !== b); // === value + type
+ a = 5;
+ b = 6;
+ let cond1 = a> b;
+ let cond2 = a<b;
+ console.log(cond1 && cond2); //false
+ console.log(cond1 || cond2); //true
+ console.log(!(cond1 && cond2)); //true
+
+ //If statement
+ a = 8;
+ if ((a%2) === 0){
+ console.log("even");
+ }else{
+    console.log("odd");
+ }
+ let age = 25;
+ if(age >= 18){
+    console.log("vote");
+ }else if(age <= 18){
+    console.log("cannot vote");
+ }else{
+    console.log("what");
+ }
+ //ternnary operator
+ age = 19 ;
+ age > 18 ? console.log("vote") : console.log(" no vote");
+//
+let reply = prompt("is it even or odd");
+if ((reply%2) === 0){
+    alert('it is even ');
+    console.log("even");
+    }else{
+        alert(" it is odd")
+       console.log("odd");
+    }
+
+console.log(reply);
+let score = prompt("How much you score");
+if(score <= 100 && score >=90){
+    console.log('A Grade');
+    alert(" A Grade ");
+}else if(score <= 89 && score >=60){
+    console.log('B Grade');
+    alert(" B Grade ");
+}else if (score <= 59 && score >=40){
+    console.log("c grade");
+    alert(" c Grade ");
+}else {
+    console.log("fail");
+    alert("fail");
 }
-{
-    let a = 10
-    console.log(a);
-}
-//Object
-const profile = { //const object can be modified i.e itd eky value pair
-    username: " mushy",
-    dob: 11297,
-    ispass: true,
-};
-profile.username = "Mustafa Raza ";
-console.log(profile.username);
-console.log(profile.dob);
-console.log(profile.ispass);
-console.log(typeof profile);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

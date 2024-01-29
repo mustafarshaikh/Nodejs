@@ -26,3 +26,26 @@ for(price of prices){
     fprice = price-discount;
     console.log(`final prpice of item ${fprice}`);
 }
+const student = {
+    sname : "muhsy",
+    number: 45,
+    ispass : true
+};
+for(i in student){
+    console.log(i, student[i]);
+    // console.log(student[i]);
+}
+prices.push(1000);
+console.log(prices);
+prices.pop();
+console.log(prices);
+prices.toString();
+console.log(prices.toString());
+console.log(prices.concat(marks));
+let temp1 = prices.unshift(700);
+console.log(prices);
+// prices.shift();
+console.log(prices);
+// console.log(prices.slice(1,3))
+let temp2= prices.splice(2,1,49,51,53);
+console.log(temp2);
